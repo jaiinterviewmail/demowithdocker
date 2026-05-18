@@ -36,7 +36,7 @@ jobs:
       run: docker build -t app .
 
     - name: Push Image
-      run: docker push <ECR_REPO>
+      run: docker push 460299232182.dkr.ecr.ap-south-1.amazonaws.com/ai-cicd-app
 
   terraform:
     needs: docker
